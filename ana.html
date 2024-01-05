@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .highlight{
+        background-color: yellow;
+        color: red;
+        width: fit-content;
+      }
+      
+    </style>
+</head>
+<body>
+<button id="myButton">click</button>
+<p id="myPara">Learning js</p>
+ <script>
+  const myPara = document.getElementById('myPara')
+  const myButton = document.getElementById('myButton');
+
+  myButton.addEventListener('click',function(){
+    myPara.classList.add('highlight');
+    
+  })
+    
+ </script>
+</body>
+</html>
